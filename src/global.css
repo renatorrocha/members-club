@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .title-md {
+        @apply text-[24px] leading-[140%] font-bold;
+    }
+
+    .title-sm {
+        @apply text-[18px] leading-[140%] font-bold;
+    }
+
+    .subtitle-md {
+        @apply text-[14px] leading-[140%] font-bold uppercase;
+    }
+
+    .subtitle-sm {
+        @apply text-[12px] leading-[140%] font-bold uppercase;
+    }
+
+    .text-md {
+        @apply text-[16px] leading-[140%] font-normal;
+    }
+
+    .text-sm {
+        @apply text-[14px] leading-[140%] font-normal;
+    }
+
+    .text-xs {
+        @apply text-[12px] leading-[140%] font-normal;
+    }
+}

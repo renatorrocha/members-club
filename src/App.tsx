@@ -1,3 +1,7 @@
 export default function App() {
-	return <div className="text-red-400">App</div>;
+	return (
+		<div className="h-64 w-full bg-gradient-base font-oxygen subtitle-md">
+			App
+		</div>
+	);
 }
