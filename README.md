@@ -1,50 +1,17 @@
-# React + TypeScript + Vite
+-   [ ] Deve ser possível buscar um cliente digitando o ID na busca e apertando a tecla Enter.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+-   [ ] Deve haver uma validação pra saber se é um ID válido e existente.
 
-Currently, two official plugins are available:
+-   [ ] Deve aparecer um alerta de erro em tela caso seja um ID inválido.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-   [ ] Deve ser exibida na tela a imagem do(a) cliente.
 
-## Expanding the ESLint configuration
+-   [ ] Deve ser exibido na tela o nome do(a) cliente.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+-   [ ] Deve ser exibido na tela o histórico de cortes com a quantidade, a data e a hora.
 
-- Configure the top-level `parserOptions` property like this:
+-   [ ] Deve ter um check no cartão fidelidade para cada corte de cabelo que o(a) cliente tiver.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+-   [ ] Deve ser exibido na tela um progresso com o número de cortes restantes para o prêmio.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+-   [ ] Deve aparecer na tela um modal de parabéns com a mensagem: “Parabéns! Seu próximo corte é gratuito!” caso o cliente tenha atingido os 10 cortes.
