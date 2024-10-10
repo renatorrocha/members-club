@@ -1,6 +1,5 @@
 import { CornerDownLeft } from "lucide-react";
 import { useState } from "react";
-import { twMerge } from "tailwind-merge";
 
 export default function InputCardId() {
 	const [cardId, setCardId] = useState("");
@@ -17,10 +16,9 @@ export default function InputCardId() {
 
 			<button
 				type="submit"
-				className={twMerge(
-					"h-10 w-10 bg-base-gray-700/60 items-center rounded-xl transition-all duration-300",
-					cardId && "bg-base-gray-700",
-				)}
+				disabled={!cardId}
+				onClick={() => console.log("teste")}
+				className="h-10 w-10 disabled:bg-base-gray-700/60 bg-base-gray-700 items-center rounded-xl transition-all duration-300 hover:bg-base-gray-600"
 			>
 				<CornerDownLeft className="size-5 text-base-white m-auto" />
 			</button>
