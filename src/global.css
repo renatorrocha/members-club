@@ -31,3 +31,7 @@
         @apply text-[12px] leading-[140%] font-normal;
     }
 }
+
+::selection {
+    @apply bg-principal-pink/60;
+}
