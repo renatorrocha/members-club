@@ -2,7 +2,7 @@ import { CornerDownLeft } from "lucide-react";
 import { useState } from "react";
 import { twMerge } from "tailwind-merge";
 
-export default function InputId() {
+export default function InputCardId() {
 	const [cardId, setCardId] = useState("");
 
 	return (

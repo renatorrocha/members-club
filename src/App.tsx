@@ -1,5 +1,5 @@
 import Logo from "/logo.svg";
-import InputId from "./components/button";
+import InputCardId from "./components/input-card-id";
 
 export default function App() {
 	return (
@@ -11,7 +11,7 @@ export default function App() {
 					className="w-[100px] h-12 mx-auto mb-4"
 				/>
 
-				<InputId />
+				<InputCardId />
 			</div>
 		</main>
 	);
