@@ -5,8 +5,9 @@ export default {
         extend: {
             backgroundImage: {
                 "gradient-base":
-                    "linear-gradient(90deg, #2DAA6E 0%, #2DAAAA 33.33%, #856CCF 66.67%, #D658B3 100%)",
+                    "conic-gradient(from 45deg, #2DAA6E 0%, #2DAAAA 33.33%, #856CCF 66.67%, #D658B3 100%)",
             },
+
             colors: {
                 principal: {
                     pink: "#D658B3",

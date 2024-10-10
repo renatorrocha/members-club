@@ -4,7 +4,7 @@ import UserCard from "./components/user-card";
 
 export default function App() {
 	return (
-		<main className="px-4 pt-8 mx-auto">
+		<main className="px-4 pt-8 mx-auto bg-base-gray-200 h-screen">
 			<div className="border w-full items-center">
 				<img
 					src={Logo}
