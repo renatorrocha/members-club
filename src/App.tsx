@@ -1,6 +1,7 @@
 import Logo from "/logo.svg";
 import InputCardId from "./components/input-card-id";
 import UserCard from "./components/user-card";
+import FidelityCard from "./components/fidelity-card";
 
 export default function App() {
 	return (
@@ -15,6 +16,8 @@ export default function App() {
 				<InputCardId />
 
 				<UserCard />
+
+				<FidelityCard />
 			</div>
 		</main>
 	);
