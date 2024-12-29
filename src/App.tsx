@@ -46,13 +46,15 @@ export default function App() {
 
         <InputCardId />
 
-        <UserCard />
+        <section className="space-y-2 mt-5">
+          <UserCard />
 
-        <LoyaltyCard />
+          <LoyaltyCard />
 
-        <UserProgressCard />
+          <UserProgressCard />
 
-        <AppointmentHistory />
+          <AppointmentHistory />
+        </section>
       </div>
     </main>
   );
