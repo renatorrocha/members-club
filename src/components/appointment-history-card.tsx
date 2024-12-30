@@ -2,10 +2,14 @@ import { data } from "../App";
 import Card from "./card";
 import SealCheck from "/seal-check.svg";
 
-export default function AppointmentHistory() {
+export default function AppointmentHistory({
+  className,
+}: {
+  className?: string;
+}) {
   return (
-    <Card>
-      <div className="flex-1 flex flex-col gap-4">
+    <Card className={className + "lg:p-6"}>
+      <div className="flex-1 flex flex-col gap-4 h-[420px]">
         <div className="flex justify-between items-center">
           <p className="text-base-gray-500 subtitle-sm uppercase">Histórico</p>
 

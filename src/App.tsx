@@ -36,8 +36,8 @@ export const data = {
 
 export default function App() {
   return (
-    <main className="px-4 pt-8 mx-auto bg-base-gray-200 h-screen">
-      <div className="border w-full items-center">
+    <main className="px-4 pt-8 bg-base-gray-200 min-h-screen">
+      <div className="border w-full max-w-[912px] mx-auto">
         <img
           src={Logo}
           alt="Member Club logo"
@@ -46,14 +46,14 @@ export default function App() {
 
         <InputCardId />
 
-        <section className="space-y-2 mt-5">
-          <UserCard />
+        <section className="grid-areas-layout gap-4 mt-5">
+          <UserCard className="area-user" />
 
-          <LoyaltyCard />
+          <LoyaltyCard className="area-loyalty" />
 
-          <UserProgressCard />
+          <UserProgressCard className="area-progress" />
 
-          <AppointmentHistory />
+          <AppointmentHistory className="area-appointments" />
         </section>
       </div>
     </main>

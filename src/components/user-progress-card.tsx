@@ -2,11 +2,15 @@ import { data } from "../App";
 import Card from "./card";
 import GiftPin from "/gift-pin.svg";
 
-export default function UserProgressCard() {
+export default function UserProgressCard({
+  className,
+}: {
+  className?: string;
+}) {
   const cutsRemaining = data.loyaltyCard.cutsRemaining;
 
   return (
-    <Card>
+    <Card className={className + " lg:p-8"}>
       <div className="flex-1 gap-6 flex justify-between items-center">
         <div className=" flex-1">
           <p className="text-base-gray-500 text-sm">

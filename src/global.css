@@ -30,6 +30,43 @@
   .text-xs {
     @apply text-[12px] leading-[140%] font-normal;
   }
+
+  .grid-areas-layout {
+    display: grid;
+    grid-template-areas:
+      "user"
+      "loyalty"
+      "progress"
+      "appointments";
+    gap: 16px;
+  }
+
+  @media (min-width: 768px) {
+    .grid-areas-layout {
+      grid-template-areas:
+        "user loyalty"
+        "appointments loyalty"
+        "appointments progress";
+      grid-template-columns: 320px auto;
+      grid-template-rows: auto;
+    }
+
+    .area-user {
+      grid-area: user;
+    }
+
+    .area-loyalty {
+      grid-area: loyalty;
+    }
+
+    .area-progress {
+      grid-area: progress;
+    }
+
+    .area-appointments {
+      grid-area: appointments;
+    }
+  }
 }
 
 ::selection {

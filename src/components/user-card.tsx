@@ -1,9 +1,9 @@
 import { data } from "../App";
 import Card from "./card";
 
-export default function UserCard() {
+export default function UserCard({ className }: { className?: string }) {
   return (
-    <Card>
+    <Card className={className + " h-fit"}>
       <figure className="p-[3px] bg-gradient-base rounded-[18px] w-fit">
         <img
           src="https://picsum.photos/300"

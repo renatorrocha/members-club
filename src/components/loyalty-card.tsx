@@ -11,16 +11,17 @@ const data = {
   },
 };
 
-export default function LoyaltyCard() {
+export default function LoyaltyCard({ className }: { className?: string }) {
   return (
-    <Card className="flex-col">
+    <Card className={className + " flex-col lg:py-8 lg:px-6 h-fit"}>
       <div className="flex items-start justify-between w-full">
         <div className="space-y-1">
           <p className="text-base-gray-500 subtitle-sm uppercase">
             Cartão Fidelidade
           </p>
           <p className="text-xs text-base-gray-500">
-            Ao fazer cortes de cabelo, o <br /> décimo sai de graça!
+            Ao fazer cortes de cabelo, o <br className="block lg:hidden" />{" "}
+            décimo sai de graça!
           </p>
         </div>
 
@@ -33,14 +34,18 @@ export default function LoyaltyCard() {
         {Array.from({ length: data.loyaltyCard.cutsNeeded }).map((_, index) => (
           <div
             key={index}
-            className="size-14 rounded-lg bg-base-gray-200 flex items-center justify-center"
+            className="size-14 md:size-24 rounded-lg bg-base-gray-200 flex items-center justify-center"
           >
             {index < data.loyaltyCard.totalCuts && (
-              <img src={CheckPin} alt="" className="mx-auto size-10" />
+              <img
+                src={CheckPin}
+                alt=""
+                className="mx-auto size-10 md:size-16"
+              />
             )}
 
             {index === data.loyaltyCard.cutsNeeded - 1 && (
-              <Gift className="text-base-gray-500" />
+              <Gift className="text-base-gray-300 md:size-12 " />
             )}
           </div>
         ))}
